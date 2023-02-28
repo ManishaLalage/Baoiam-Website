@@ -1,18 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+
 /*=============== BASE ===============*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: "Poppins", sans-serif; */
   font-family: "Montserrat", sans-serif;
   list-style: none;
   text-decoration: none;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 }
 
 /*=============== TOP-HEADER ===============*/
 
-.top-nav {
+ .top-nav {
   background-color: #2ecc71;
   width: 100%;
 }
@@ -48,10 +50,10 @@ span#words {
 span#words:hover {
   color: white;
   font-weight: 600;
-}
+} 
 
 /*=============== HEADER & NAV ===============*/
-.header-icons {
+ .header-icons {
   justify-content: center;
   margin-top: -0.2%;
   height: 50px;
@@ -84,7 +86,7 @@ span#words:hover {
 .header-icons i:hover {
   transform: scale(1.2);
   color: white;
-}
+} 
 
 /****************** Navbar**************/
 
@@ -138,7 +140,6 @@ header {
 .menu-bar ul li a {
   font-weight: 550;
   font-size: 17px;
-  /* color: white; */
   text-decoration: none;
   color: black;
 
@@ -153,10 +154,10 @@ header {
   float: right;
   margin-left: 10px;
   padding-top: 3px;
-}
+} 
 
 /* dropdown menu style */
-.dropdown-menu {
+ .dropdown-menu {
   display: none;
 }
 
@@ -165,7 +166,6 @@ header {
   position: absolute;
   left: 0;
   top: 100%;
-  /* background-color: black; */
 }
 
 .menu-bar ul li:hover .dropdown-menu ul {
@@ -187,7 +187,6 @@ header {
   position: absolute;
   left: 150px;
   top: 0;
-  /* background-color: black; */
 }
 
 .navbar ul .search {
@@ -235,4 +234,110 @@ header {
 }
 .navbar ul .nav_btn:hover {
   background-color: #bd4ded;
+} 
+
+
+
+/* Arrival Slider */
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+section
+{
+padding: 14rem 9%;
+}
+
+.heading h1 {
+  font-size: 3.5rem;
+  color: #222;
+}
+
+.arrivals .slide {
+  text-align: center;
+  background: #fff;
+}
+
+.arrivals .slide:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.arrivals .slide .image {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+.arrivals  .slide .image .new {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: .5rem 1.1rem;
+  font-size: 1.1rem;
+  color: #fff;
+    /* background-color: lavender; */
+
+    background-color: #8e44ad;
+  z-index: 10;
+}
+
+.arrivals .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.arrivals .slide .content {
+
+  padding-top: .5rem;
+}
+
+.arrivals .slide .content p {
+  font-size: 2rem;
+  color: #222;
+  line-height: 2;
+  padding: .5rem 0;
+}
+
+.arrivals .slide .content .price {
+  font-size: 2rem;
+  color: #8e44ad;
+}
+
+.arrivals .slide .content .price span {
+  color: #777;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border: 0.2rem solid #222;
+  background: #fff;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #222;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #8e44ad;
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+  color: #222;
 }
