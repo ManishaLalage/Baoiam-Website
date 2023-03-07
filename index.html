@@ -21,7 +21,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- fas fa icon link -->
@@ -33,7 +32,6 @@
   <!-- font awesome cdn link  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 
 
@@ -91,6 +89,21 @@
          <li><a href="#"> <i class="bx bx-phone"><span>888-256-9448</span></i></a></li>
        </div>
  
+
+
+       <!-- <div class="mobile-navbar-btn" style="background-color: yellow;font-size: 20px; width: 100px; height: 100px; float: right;">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        <div id="menu-btn" class="fas fa-bars"></div> -->
+        <!-- <div id="close-navbar" class="fas fa-times"></div> -->
+        <!-- <i class="bx bx-menu"></i> -->
+
+<!-- <div id="mobile-nav-icon">   <i class="fas fa-bars"></i></div>
+    <div id="mobile-nav-icon">    <i class="fa fa-times"></i></div> -->
+      <!-- </div> -->
+
+
+
      </div> 
  
    </div> 
@@ -104,11 +117,16 @@
 <div class="menu-bar">
 <a href="#" class="logo">
   <img src="images/logo2.png">
-  <div class="navbar">
-    <ul>
-      <li id="nav-items"><a href="#">Home</a></li>
+
+
+    <div class="navbar">
+      <div class="openMenu"><i class="fa fa-bars"></i></div>
+
+
+      <ul class="mainMenu">
+        <li id="nav-items"><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li id="nav-items"><a href="#">Pages <i class="fas fa-caret-down"></i></a>
+      <!-- <li id="nav-items"><a href="#" id="page">Pages <i class="fas fa-caret-down"></i></a>
 
         <div class="dropdown-menu">
           <ul>
@@ -129,7 +147,7 @@
             <li><a href="#">FAQ</a></li>
           </ul>
         </div>
-      </li>
+      </li> -->
 
       <li><a href="#">Blog</a></li>
       <div class="dropdown-menu">
@@ -155,17 +173,33 @@
 
       <li id="nav-items"><a href="#">Contact </a></li>
       <div class="search">
-        <input type="text" name="search" id="search" placeholder=" Search on Baiom">
+        <input type="text" name="search" id="search" placeholder=" Search on Baoiam">
         <a href="">
           <li class="fas fa-search"></li>
       </div>
       <button class="nav_btn">Get Started</button>
+
+      <div class="closeMenu"><i class="fa fa-times"></i></div>
+
+
+
+
+      <!-- <br> -->
+      <!-- <div class="mobile_view">
+      <i name="menu-outline" id="mobile-nav-icon" class="fas fa-bars"></i>
+      <i name="close-outline" id="mobile-nav-icon" class="fas fa-times"></i>
+      </div> -->
+      <!-- <div id="mobile-nav-icon">   <i class="fas fa-bars"></i></div> -->
+    <!-- <div id="mobile-nav-icon">    <i class="fa fa-times"></i></div> -->
     </ul>
   </div>
   </div>
-
-
   <!-- </div> -->
+
+
+
+
+
 
 </header>  
 
@@ -406,7 +440,104 @@
     </div>
 
   </section>
+<!-- Favourites -->
+<section class="blogs" id="blogs">
 
+  <div class="heading">
+<h1>Discover Our Favourites</h1>
+  </div>
+
+  <div class="swiper blogs-slider">
+
+      <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide">
+              <div class="image">
+                  <img src="images/img-1.jpg" alt="">
+                  <div class="icons">
+                      <a href="#"> <i class="fas fa-user"></i> User </a>
+                      <a href="#"> <i class="fas fa-clock"></i> 1st march, 2023 </a>
+                  </div>
+              </div>
+              <div class="content">
+                <h3>favourite</h3>
+              </div>
+          </div>
+
+          <div class="swiper-slide slide">
+              <div class="image">
+                  <img src="images/img-2.jpg" alt="">
+                  <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> User </a>
+                    <a href="#"> <i class="fas fa-clock"></i> 1st march, 2023 </a>
+                  </div>
+              </div>
+              <div class="content">
+                <h3>favourite</h3>
+                          </div>
+          </div>
+
+          <div class="swiper-slide slide">
+              <div class="image">
+                  <img src="images/img-3.jpg" alt="">
+                  <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> User </a>
+                    <a href="#"> <i class="fas fa-clock"></i> 1st march, 2023 </a>
+                  </div>
+              </div>
+              <div class="content">
+                <h3>favourite</h3>
+              </div>
+          </div>
+
+          <div class="swiper-slide slide">
+              <div class="image">
+                  <img src="images/img-4.jpg" alt="">
+                  <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> User </a>
+                    <a href="#"> <i class="fas fa-clock"></i> 1st march, 2023 </a>
+                  </div>
+              </div>
+              <div class="content">
+                <h3>favourite</h3>
+              </div>
+           
+          </div>
+
+          <div class="swiper-slide slide">
+              <div class="image">
+                  <img src="images/img-5.jpg" alt="">
+                  <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> User </a>
+                    <a href="#"> <i class="fas fa-clock"></i> 1st march, 2023 </a>
+                  </div>
+              </div>
+              <div class="content">
+                <h3>favourite</h3>
+              </div>
+          </div>
+
+          <div class="swiper-slide slide">
+              <div class="image">
+                  <img src="images/img-6.jpg" alt="">
+                  <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> User </a>
+                    <a href="#"> <i class="fas fa-clock"></i> 1st march, 2023 </a>
+                  </div>
+              </div>
+              <div class="content">
+                  <h3>favourite</h3>
+              </div>
+          </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+  </div>
+
+</section>
 
 
 <!-- Footer -->
